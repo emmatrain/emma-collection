@@ -30,9 +30,14 @@ header {
 }
 
 .item {
+    height: 500px;
     width: 25%;
     padding: 10px;
     margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 h1 {
@@ -49,13 +54,42 @@ h1, h2:hover {
     color: #B31731;
 }
 
-.header-wrap {
-height: 50px;
-border-bottom: 2px #B31731 solid;
+@media screen and (max-width: 1435px) {
+    .item {
+        height: 500px;
+        width: 35%;
+        padding: 10px;
+        margin: 10px;
+    }
 }
 
-.stats-wrap {
-    margin-left: 25%;
-    margin-right: 25%;;
-    width: 100%
+@media screen and (max-width: 1063px) {
+    .item {
+        height: 500px;
+        width: 50%;
+        padding: 10px;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 1063px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .header-img {
+        height: 70%;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header-img {
+        height: 80%;
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
 }

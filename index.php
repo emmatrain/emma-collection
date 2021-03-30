@@ -1,6 +1,11 @@
 <?php
 
 require_once 'functions.php';
+require_once 'dbconnection.php';
+
+$db = getDb();
+$wines = getWines($db);
+$winesToDisplay = displayWines($wines);
 
 ?>
 
@@ -26,7 +31,7 @@ require_once 'functions.php';
 <body>
 
     <div class="wine-box">
-        <?php echo displayWines($wines); ?>
+        <?= $winesToDisplay; ?>
     </div>
 
 
@@ -34,5 +39,11 @@ require_once 'functions.php';
 
 </body>
 
+<?php
+
+$wines = getWines($db);
+print_r($wines);
+
+?>
 
 </html>
