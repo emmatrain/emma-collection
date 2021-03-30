@@ -15,12 +15,12 @@ return $query->fetchAll();
 }
 
 /**
- * Iterates over the db array and displays using HTML and CSS
+ * Validates the db data, then iterates over the database to display all wines
  *
- * @param array $wines the data
+ * @param array $wines the db data
  * @return string in front end using echo
  */
-function displayWines($wines): string
+function displayWines(array $wines): string
 {
     $result = "";
     foreach ($wines as $wine) {
@@ -31,6 +31,12 @@ function displayWines($wines): string
     return $result;
 }
 
+/**
+ * Integrates the db data with HTML for output into front end
+ *
+ * @param array $wine the data from the db
+ * @return string font end appropriate formatting with HTML
+ */
 function displayWine(array $wine): string
 {
     $result = '<div class="item">';
@@ -47,6 +53,12 @@ function displayWine(array $wine): string
     return $result;
 }
 
+/**
+ * Validates data from the database
+ *
+ * @param array individual db entry
+ * @return bool true if data is valid
+ */
 function validateWine(array $wine): bool
 {
     if (array_key_exists("wine-name", $wine) &&
