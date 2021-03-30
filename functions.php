@@ -16,8 +16,6 @@ $query->execute();
 return $query->fetchAll();
 }
 
-//Variables
-
 $db = getDb();
 $wines = getWines($db);
 
@@ -39,14 +37,14 @@ function displayWines(array $wines) {
         ?>
 
         <div class="item">
-            <div class="header-wrap"><h3><?php echo $wineName ?></h3></div>
-            <img class="bottle" src="<?php echo $image?>">
+            <div class="header-wrap"><h1><?php echo $wineName ?></h1></div>
+            <img class="bottle" src="<?php echo $image?>" alt="wine bottle">
             <div class="stats-wrap">
-                <h4>Origin </h4><p><?php echo $origin ?></p><br>
-                <h4>Grape </h4><p><?php echo $grape ?></p><br>
-                <h4>Style </h4><p><?php echo $style ?></p><br>
-                <h4>Farming </h4><p><?php echo $farming ?></p><br>
-                <h4>ABV </h4><p><?php echo $abv ?>%</p><br>
+                <h2>Origin </h2><p><?php echo $origin ?></p><br>
+                <h2>Grape </h2><p><?php echo $grape ?></p><br>
+                <h2>Style </h2><p><?php echo $style ?></p><br>
+                <h2>Farming </h2><p><?php echo $farming ?></p><br>
+                <h2>ABV </h2><p><?php echo $abv ?>%</p><br>
         </div>
         </div>
         <?php

@@ -12,8 +12,8 @@ require_once 'functions.php';
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8"/>
-    <link rel="stylesheet" href="styles.css" type="text/css" />
     <link rel="stylesheet" href="normalize.css" type="text/css" />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
     <link rel="stylesheet" href="https://use.typekit.net/kln6efb.css">
 </head>
 
