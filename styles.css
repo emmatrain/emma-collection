@@ -1,0 +1,61 @@
+/** {*/
+/*    box-sizing: border-box;*/
+
+
+html {
+    font-family: 'Muli', sans-serif;
+    margin: 100px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.wine-box{
+    /*margin: 100px 100px;*/
+    /*border: 2px blue solid;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    /*border: 2px red solid;*/
+    width: 25%;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+h4, p {
+    display: inline;
+}
+
+.item img {
+    padding: 30px;
+    align: left;
+}
+
+.header-wrap {
+    padding: 10px;
+    border-bottom: 2px #B31731 solid;
+    height: 12%;
+}
+
+.stats-wrap {
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+
+h3, h4:hover {
+    color: #B31731;
+}
+
+
+.bottle {
+    height: 300px;
+    width: 300px;
+}
+
