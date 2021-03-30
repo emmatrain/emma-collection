@@ -39,11 +39,5 @@ $winesToDisplay = displayWines($wines);
 
 </body>
 
-<?php
-
-$wines = getWines($db);
-print_r($wines);
-
-?>
 
 </html>
