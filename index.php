@@ -72,7 +72,7 @@ $winesToDisplay = displayWines($wines);
         <p>Optional image URL:</p><br>
         <input type="url" name="imageurl"><br>
 
-        <input type="submit" value="Add Wine" />
+        <input type="submit" value="Add Wine" name="submit"/>
 
     </form>
 
