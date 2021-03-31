@@ -1,50 +1,43 @@
 <?php
 
+require_once 'functions.php';
 require_once 'dbconnection.php';
 
-/**
- * Retrieves the wines from the database
- *
- * @param PDO $db a database connection
- * @return array all of the wines in the database
- */
-function getWines(PDO $db): array
-{
-$query = $db->prepare("SELECT *
-FROM `wines`;");
-$query->execute();
-return $query->fetchAll();
-}
-
 $db = getDb();
-$allWines = getWines($db);
-echo '<pre>';
-var_dump($allWines);
-echo '</pre>';
+$wines = getWines($db);
+$winesToDisplay = displayWines($wines);
+
 ?>
 
-<!---->
-<!--<!DOCTYPE html>-->
-<!---->
-<!--<html>-->
-<!---->
-<!--<head>-->
-<!---->
-<!--</head>-->
-<!---->
-<!--<body>-->
-<!---->
-<!--<header>-->
-<!--    <h1>Wine Collection</h1>-->
-<!--</header>-->
-<!---->
-<!--<body>-->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!--</body>-->
-<!---->
-<!---->
-<!--</html>-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="normalize.css" type="text/css" />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.typekit.net/kln6efb.css">
+</head>
+
+<header>
+
+<img class="header-img" src="images/header.png">
+
+</header>
+
+<body>
+
+    <div class="wine-box">
+        <?= $winesToDisplay; ?>
+    </div>
+
+
+
+
+</body>
+
+
+</html>
