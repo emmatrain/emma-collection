@@ -36,7 +36,7 @@ $winesToDisplay = displayWines($wines);
 
     <form method="post" action="validate.php">
         <p>Wine Name:</p><br>
-        <input type="text" name="wine-name" required><br>
+        <input type="text" name="winename" required><br>
 
         <p>Origin(Country, Region):</p><br>
         <input type="text" name="origin" required><br>
@@ -70,7 +70,7 @@ $winesToDisplay = displayWines($wines);
         <input type="number" step="0.01" name="abv" required><br>
 
         <p>Optional image URL:</p><br>
-        <input type="url" name="abv"><br>
+        <input type="url" name="imageurl"><br>
 
         <input type="submit" value="Add Wine" />
 
