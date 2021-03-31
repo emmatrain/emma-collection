@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Muli', sans-serif;
+    margin: 50px;
+    font-size: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.header-img {
+    padding-bottom: 5%;
+}
+
+.bottle {
+    height: 300px;
+    width: 300px;
+    padding: 8%;
+}
+
+.wine-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    height: 500px;
+    width: 25%;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+h2, p {
+    display: inline;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+h1, h2:hover {
+    color: #B31731;
+}
+
+@media screen and (max-width: 1435px) {
+    .item {
+        height: 500px;
+        width: 35%;
+        padding: 10px;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 1063px) {
+    .item {
+        height: 500px;
+        width: 50%;
+        padding: 10px;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 1063px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .header-img {
+        height: 70%;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header-img {
+        height: 80%;
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
