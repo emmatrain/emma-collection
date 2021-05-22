@@ -1,4 +1,4 @@
-# emma-collection
+# Wine Collection
 
 About this app
 
