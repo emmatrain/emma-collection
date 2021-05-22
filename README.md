@@ -8,8 +8,9 @@ Installation
 
 Clone
 
-To install the repo, go to your terminal and git clone git@github.com:iO-Academy/2021-march-fetch.git
-Auto Loading
+To install the repo, go to your terminal and `git clone git@github.com:emmatrain/wine-collection.git`
+
+Database
 
 Create a database called wine-collection
 
